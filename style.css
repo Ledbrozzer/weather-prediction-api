@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232c35;
+}
+.bigger-box{
+    background-color: darkslategrey;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+    /* width 95% might be too large, but t max-width 'll prevent that(especially for bigger screens)*/
+}
+.city-input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c;
+    color: #ffffff;
+    width: calc(100% - 100px);
+    /*cal -> calculate the width(all t space it has - less 100px) */
+}
+.search-button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border: 50px;
+    border-radius: 10px;
+    background-color: #7c7c;
+    cursor: pointer;
+    float: right;
+    /* float -> to move the button completly to t right*/
+}
+.img-search{
+    width: 20px;
+}
+.middle-box{
+    margin-top: 30px;
+
+}
+.city{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.temperature{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.smaller-box{
+    display: flex;
+    /* flex will make the contents be next to each other(side to side), instead of one under the other(vertical)*/
+    align-items: center;
+    /* centralize on the vertical*/
+    margin-top: 20px;
+}
+.weather-prediction{
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize;
+    /* 'text-transform: capitalize;' -> to change the first letter to "Uppercase" */
+}
+.humidity{
+    color: #ffffff;
+    margin-top: 20px;
+}

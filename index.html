@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <title>Previsão do Tempo</title> -->
+    <title>Weather Predition</title>
+</head>
+
+<body>
+    
+    <div class="bigger-box">
+
+        <input class="city-input" placeholder="Cidade">
+
+        <button class="search-button" onclick="buttonClick()">
+
+            <span class="img-search">
+                 <i class="fa-solid fa-magnifying-glass">.</i>
+            </span>
+        </button>
+        
+        <div class="middle-box">
+            <!-- <h2 class="city">Tempo em</h2> -->
+            <h2 class="city">Weather in </h2>
+
+            <p class="temperature"></p>
+            
+            <div class="smaller-box">
+
+                <!-- <span>
+                    <i class="fa-solid fa-cloud"></i>
+                </span> -->
+                <img class="img-prediction" src="" alt="">
+               <!-- <img class="img-prediction" src="https://openweathermap.org/img/wn/04n.png" alt=""> -->
+                <p class="weather-prediction">Clouded </p>
+            </div>
+
+            <p class="humidity">Humidity: </p>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
